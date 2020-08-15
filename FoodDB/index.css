@@ -1,0 +1,252 @@
+* {
+    scroll-behavior: smooth;
+}   
+
+body{
+    margin: 0;
+}
+
+/* HEADER */
+
+a{
+    text-decoration: none;
+}
+
+header{
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, #ED405F, #AC0318);
+}
+
+nav h2{
+    margin: 0;
+    color: white;
+    text-shadow: 0 0 10px grey;
+    font-size: 900;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+/* WELCOME SECTION */
+
+#welcomeSection{
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://i.ibb.co/G3G4nHR/jakub-kapusnak-s-Dbj1d-Fl-FPU-unsplash-1.jpg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#welcomeSection h1{
+    margin: 0;
+    font-family: 'Abril Fatface', cursive;
+    background: -webkit-linear-gradient(45deg, #ED405F, #AC0318);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#iconDiv{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+}
+
+#welcomeSection i{
+    bottom: 30px;
+    font-size: 60px;
+    color:  #AC0318;
+    animation: caret 1.5s infinite;
+}
+
+@keyframes caret {
+    0%{
+        transform: translateY(0);
+        background-color: #E1E0E5;
+        width: 60px;
+        height: 60px;
+        display: grid;
+        place-items: center;
+        border-radius: 50%;
+    }
+
+    100%{
+        transform: translateY(15px);
+        background-color: transparent;
+        place-items: center;
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+    }
+}
+
+
+/* CONTENT SECTION */
+
+#contentSection{
+    width: 100vw;
+    max-width: 100%;
+    height: auto;
+    background-image: linear-gradient(45deg, #8f0414 40%,  #AC0318 40%, #ED405F 60%, rgb(247, 103, 129) 60%);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+#mealcard{
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 2px;
+    border-radius: 5px;
+    width: 380px;
+    height: 300px;
+    background-color: #E1E0E5;
+    border-radius: 3px solid #fefdff;
+    box-shadow: 0 0 0 1.5px #363636b3;
+    background-image: linear-gradient(to top, #363636b3 2%, transparent 2%), linear-gradient(to bottom, #3636361a 1%, transparent 1%);
+}
+
+#mealcard img{
+    margin-top: 2px;
+    width: 100%;
+    height: 85%;
+}
+
+#mealcard h3{
+    margin: 0;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    background: -webkit-linear-gradient(90deg, #fc5372, #830110);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+/* RECIPE SECTION */
+
+#recipeSection{
+    width: 100%;
+    height: auto;
+    background-color: #fc5372;
+    box-shadow: 0 0 0 2px inset #8F0414;
+}
+
+#recipeSection img{
+    margin-top: 30px;
+    width: 370px;
+    height: 350px;
+    border-radius: 5px;
+    border: 2px solid white;
+}
+
+#imageName{
+    width: 100%;
+    height: 400px;
+    display: grid;
+    place-items: center;
+}
+
+#ingredients{
+    width: 100%;
+    height: auto;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 40px;
+    flex-direction: column;
+    color: white;
+}
+
+#recipeSection h2{
+    margin: 0 0 10px 0;
+    text-align: center;
+    color: white;
+    font-family: 'Abril Fatface', cursive;
+}
+
+#imageName h3{
+    margin: 0;
+    text-align: center;
+    font-family: 'Permanent Marker', cursive;
+    color: white;
+}
+
+ul{
+    margin: 0 auto;
+    text-align: left;
+    width: fit-content;
+    color: white;
+    font-family: monospace;
+}
+
+li{
+    list-style-type:georgian;
+    font-size: 18px;
+}
+
+#instruction{
+    margin-top: 20px;
+}
+
+#upIcon{
+    position: fixed;
+    color: white;
+    bottom: 30px;
+    right: 30px;
+    transform: rotate(180deg);
+    font-size: 35px;
+}
+
+#footer{
+    color: white;
+    text-align: center;
+}
+
+#footer h1{
+    margin: 0;
+    font-family: 'Permanent Marker', cursive;
+}
+
+
+
+
+@media (max-width: 600px) {
+    #contentSection{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #recipeSection img{
+        margin-top: 40px;
+        width: 90%;
+        height: 350px;
+        border-radius: 5px;
+        border: 2px solid rgb(124, 61, 61);
+    }
+    
+    #mealcard{
+    width: 310px;
+    height: 300px;
+}
+
+
+#upIcon{
+    bottom: 15px;
+    right: 15px;
+}
+}
