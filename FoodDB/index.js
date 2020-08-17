@@ -153,17 +153,14 @@ const recipes = `[
 }
 ]`
 
-
+const foodImage = document.getElementById('foodImage')
+const foodName = document.getElementById('foodName')
+const ingParent = document.getElementById('ingredientList')
+const instParent = document.getElementById('instructionList')
 
 const jollof = () =>{
-    const foodImage = document.getElementById('foodImage')
-    const foodName = document.getElementById('foodName')
-
-    const ingParent = document.getElementById('ingredientList')
     const ingArr = JSON.parse(recipes)[0].ingredient
     const instArr = JSON.parse(recipes)[0].instruction
-    const instParent = document.getElementById('instructionList')
-    const instList = document.createElement('li')
 
     while(ingParent.hasChildNodes()){
         ingParent.removeChild(ingParent.firstChild)
@@ -175,7 +172,7 @@ const jollof = () =>{
     function ing (all){
         const ingList = document.createElement('li')
         const ingListText = document.createTextNode(all)
-        
+        console.log(ingListText)
         ingList.appendChild(ingListText)
         return ingList
     }
@@ -200,14 +197,9 @@ const jollof = () =>{
 }
 
 const amala = () =>{
-    const foodImage = document.getElementById('foodImage')
-    const foodName = document.getElementById('foodName')
-
-    const ingParent = document.getElementById('ingredientList')
     const ingArr = JSON.parse(recipes)[3].ingredient
     const instArr = JSON.parse(recipes)[3].instruction
-    const instParent = document.getElementById('instructionList')
-    const instList = document.createElement('li')
+    
 
     while(ingParent.hasChildNodes()){
         ingParent.removeChild(ingParent.firstChild)
@@ -243,15 +235,9 @@ const amala = () =>{
 }
 
 const doughnut = () =>{
-    const foodImage = document.getElementById('foodImage')
-    const foodName = document.getElementById('foodName')
-
-    const ingParent = document.getElementById('ingredientList')
     const ingArr = JSON.parse(recipes)[2].ingredient
     const instArr = JSON.parse(recipes)[2].instruction
-    const instParent = document.getElementById('instructionList')
-    const instList = document.createElement('li')
-
+    
     while(ingParent.hasChildNodes()){
         ingParent.removeChild(ingParent.firstChild)
     }
@@ -286,14 +272,9 @@ const doughnut = () =>{
 }
 
 const yam = () =>{
-    const foodImage = document.getElementById('foodImage')
-    const foodName = document.getElementById('foodName')
-
-    const ingParent = document.getElementById('ingredientList')
     const ingArr = JSON.parse(recipes)[1].ingredient
     const instArr = JSON.parse(recipes)[1].instruction
-    const instParent = document.getElementById('instructionList')
-    const instList = document.createElement('li')
+    
 
     while(ingParent.hasChildNodes()){
         ingParent.removeChild(ingParent.firstChild)
@@ -329,14 +310,8 @@ const yam = () =>{
 }
 
 const salad = () =>{
-    const foodImage = document.getElementById('foodImage')
-    const foodName = document.getElementById('foodName')
-
-    const ingParent = document.getElementById('ingredientList')
     const ingArr = JSON.parse(recipes)[5].ingredient
     const instArr = JSON.parse(recipes)[5].instruction
-    const instParent = document.getElementById('instructionList')
-    const instList = document.createElement('li')
 
     while(ingParent.hasChildNodes()){
         ingParent.removeChild(ingParent.firstChild)
@@ -372,14 +347,9 @@ const salad = () =>{
 }
 
 const iyan = () =>{
-    const foodImage = document.getElementById('foodImage')
-    const foodName = document.getElementById('foodName')
-
-    const ingParent = document.getElementById('ingredientList')
     const ingArr = JSON.parse(recipes)[4].ingredient
     const instArr = JSON.parse(recipes)[4].instruction
-    const instParent = document.getElementById('instructionList')
-    const instList = document.createElement('li')
+    
 
     while(ingParent.hasChildNodes()){
         ingParent.removeChild(ingParent.firstChild)
