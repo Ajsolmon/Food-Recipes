@@ -172,7 +172,6 @@ const jollof = () =>{
     function ing (all){
         const ingList = document.createElement('li')
         const ingListText = document.createTextNode(all)
-        console.log(ingListText)
         ingList.appendChild(ingListText)
         return ingList
     }
